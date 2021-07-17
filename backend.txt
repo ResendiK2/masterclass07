@@ -1,0 +1,14 @@
+create: 
+	yarn init -y
+
+install TypeScript:
+	yarn add -D typescript
+
+install express:  
+	yarn add express
+
+install @types/express:
+	yarn add @types/express -D
+
+
+
