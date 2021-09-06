@@ -1,7 +1,7 @@
 create: 
 	yarn init -y
 
-install TypeScript:
+install TypeScript specifically for the project:
 	yarn add -D typescript
 
 install express:  
@@ -9,6 +9,25 @@ install express:
 
 install @types/express:
 	yarn add @types/express -D
+
+configure tsconfig.json:
+	yarn tsc --init
+
+	in tsconfig.json, uncomment "outDir" and set to: 
+		"outDir": "./dist"
+
+configure development stream:
+
+	install: yarn add ts-node-dev -D
+
+	in package.json add: 
+		"scripts": {
+    			"dev:server": "ts-node-dev --respawn --transpile-only src/index.ts"
+  		},
+
+	and than, to start server just run: yarn dev:server 
+
+	
 
 
 
