@@ -2,10 +2,10 @@ import { Request, Response } from "express";
 import EmailService from "../services/EmailService";
 
 const users = [
-     { name: 'John', email: 'john@example.com' },
-     { name: 'Doe', email: 'doe@example.com' },
-     { name: 'Chris', email: 'chris@example.com' },
-     { name: 'Bob', email: 'bob@example.com' }
+     { id: '1', name: 'John', email: 'john@example.com' },
+     { id: '2', name: 'Doe', email: 'doe@example.com' },
+     { id: '3', name: 'Chris', email: 'chris@example.com' },
+     { id: '4', name: 'Bob', email: 'bob@example.com' }
 ];
 
 export default {
