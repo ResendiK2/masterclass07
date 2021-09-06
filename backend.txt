@@ -27,6 +27,25 @@ configure development stream:
 
 	and than, to start server just run: yarn dev:server 
 
+configure cors for backend-to-frontend communication:
+	
+	install: yarn add cors
+
+	install types: yarn add @types/cors -D
+
+covert all files to js:
+
+	yarn tsc
+
+run aplication: 
+
+	node dist/index.js
+	
+	
+
+	
+
+
 	
 
 
